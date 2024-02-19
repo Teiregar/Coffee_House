@@ -1,0 +1,85 @@
+.container{
+    margin: 30px 0;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: rgba(64, 63, 61, 1);
+    width: 800px;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+}
+
+.text i{
+    color: rgba(176, 144, 122, 1);
+}
+
+.buttonContainer {
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button a{
+    text-decoration: none;
+    color: rgba(64, 63, 61, 1);
+}
+
+.button div{
+    border: rgba(193, 182, 173, 1) 1px solid;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 16px;
+    transition: border 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+.button span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 8px;
+    background-color: rgba(193, 182, 173, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button div:hover{
+    border: rgba(102, 95, 85, 1) 1px solid;
+    background-color: rgba(102, 95, 85, 1);
+    color: rgba(225, 212, 201, 1);
+}
+
+@media (max-width: 1360px) {
+    .text {
+        width: 688px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 348px;
+        font-size: 32px;
+    }
+
+}

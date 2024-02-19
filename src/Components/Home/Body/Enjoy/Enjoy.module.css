@@ -1,0 +1,109 @@
+.container {
+    position: relative;
+    width: 60%;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.imgContainer {
+    border: black 1px hidden;
+    border-radius: 40px;
+    width: 1360px;
+    height: 644px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.src{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.buttonA a{
+    text-decoration: none;
+    color: rgba(64, 63, 61, 1);
+}
+
+.text {
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    color: #E1D4C9;
+    width: 530px;
+
+}
+
+.enjoyDiv {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.iText {
+    color: #B0907A;
+}
+
+.invite {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button {
+    color: rgba(64, 63, 61, 1);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 55px;
+    width: 200px;
+    height: 65px;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.button p{
+    padding-left: 20px;
+    transition: all 1s ease;
+}
+
+.button img {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.button:hover p{
+    transform: translateX(-10px);
+    transition: all 1s ease;
+}
+
+.button:hover img{
+    opacity: 1;
+}
+
+@media (max-width: 1360px) {
+    .imgContainer {
+        width: 688px;
+        height: 644px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgContainer {
+        width: 348px;
+        height: 552px;
+    }
+
+    .text {
+        top: 13%;
+        left: 10%;
+        width: 316px;
+    }
+
+    .enjoyDiv {
+        font-size: 42px;
+    }
+}
